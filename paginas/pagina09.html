@@ -27,31 +27,31 @@
     <img class="elementos" id="btnIniciar" src="../img/pagina09/btnIniciar.png" data-posX="632" data-posY="426" alt="">
 
     <img class="elementos" id="instrucciones" src="../img/pagina09/instrucciones.png" data-posX="0" data-posY="0" alt="">
-  
+
     <!-- Pregunta 1 -->
     <img class="elementos" id="p1" src="../img/pagina09/p1.png" data-posX="0" data-posY="0" alt="">
     <img class="elementos respuestas rA" id="r1_a" src="../img/pagina09/r1_a.png" data-posX="301" data-posY="240" data-respuesta="m" alt="">
     <img class="elementos respuestas rB" id="r1_b" src="../img/pagina09/r1_b.png" data-posX="301" data-posY="335" data-respuesta="b" alt="">
     <img class="elementos respuestas rC" id="r1_c" src="../img/pagina09/r1_c.png" data-posX="301" data-posY="429" data-respuesta="m" alt="">
-  
+
     <!-- Pregunta 2 -->
     <img class="elementos" id="p2" src="../img/pagina09/p2.png" data-posX="0" data-posY="0" alt="">
     <img class="elementos respuestas rA" id="r2_a" src="../img/pagina09/r2_a.png" data-posX="301" data-posY="240" data-respuesta="b" alt="">
     <img class="elementos respuestas rB" id="r2_b" src="../img/pagina09/r2_b.png" data-posX="301" data-posY="335" data-respuesta="m" alt="">
     <img class="elementos respuestas rC" id="r2_c" src="../img/pagina09/r2_c.png" data-posX="301" data-posY="429" data-respuesta="m" alt="">
-  
+
     <!-- Pregunta 3 -->
     <img class="elementos" id="p3" src="../img/pagina09/p3.png" data-posX="0" data-posY="0" alt="">
     <img class="elementos respuestas rA" id="r3_a" src="../img/pagina09/r3_a.png" data-posX="301" data-posY="240" data-respuesta="m" alt="">
     <img class="elementos respuestas rB" id="r3_b" src="../img/pagina09/r3_b.png" data-posX="301" data-posY="335" data-respuesta="b" alt="">
     <img class="elementos respuestas rC" id="r3_c" src="../img/pagina09/r3_c.png" data-posX="301" data-posY="429" data-respuesta="m" alt="">
-  
+
     <!-- Pregunta 4 -->
     <img class="elementos" id="p4" src="../img/pagina09/p4.png" data-posX="0" data-posY="0" alt="">
     <img class="elementos respuestas rA" id="r4_a" src="../img/pagina09/r4_a.png" data-posX="301" data-posY="240" data-respuesta="m" alt="">
     <img class="elementos respuestas rB" id="r4_b" src="../img/pagina09/r4_b.png" data-posX="301" data-posY="335" data-respuesta="m" alt="">
     <img class="elementos respuestas rC" id="r4_c" src="../img/pagina09/r4_c.png" data-posX="301" data-posY="429" data-respuesta="b" alt="">
-  
+
     <!-- Pregunta 5 -->
     <img class="elementos" id="p5" src="../img/pagina09/p5.png" data-posX="0" data-posY="0" alt="">
     <img class="elementos respuestas rA" id="r5_a" src="../img/pagina09/r5_a.png" data-posX="301" data-posY="240" data-respuesta="m" alt="">
@@ -125,9 +125,9 @@
 
         // Audios------------------------------------------------------
         const audio = [
-            new Audio('../audios/audio0.mp3'),
-            new Audio('../audios/audio0.mp3'),
-            new Audio('../audios/audio0.mp3'),
+            new Audio('../audios/TMS_OEA_M4_09_1.mp3'),
+            new Audio('../audios/TMS_OEA_M4_09_2.mp3'),
+            new Audio('../audios/TMS_OEA_M4_09_3.mp3'),
             new Audio('../audios/s_bien.mp3'),
             new Audio('../audios/s_mal.mp3'),
         ]
@@ -170,10 +170,10 @@
 
         rA.each(function(){
             $(this).click(function () {  
-                  if($(this).css('cursor') == 'pointer'){
+                if($(this).css('cursor') == 'pointer'){
                     respuestas.css('cursor', 'default');
                     const respuesta = $(this).data('respuesta');
-                  
+                
                     if(respuesta == 'b'){
                         paloma.css({
                             'left': '630px',
@@ -203,10 +203,10 @@
 
         rB.each(function(){
             $(this).click(function () {  
-                  if($(this).css('cursor') == 'pointer'){
+                if($(this).css('cursor') == 'pointer'){
                     respuestas.css('cursor', 'default');
                     const respuesta = $(this).data('respuesta');
-                  
+                
                     if(respuesta == 'b'){
                         paloma.css({
                             'left': '630px',
@@ -236,10 +236,10 @@
 
         rC.each(function(){
             $(this).click(function () {  
-                  if($(this).css('cursor') == 'pointer'){
+                if($(this).css('cursor') == 'pointer'){
                     respuestas.css('cursor', 'default');
                     const respuesta = $(this).data('respuesta');
-                  
+                
                     if(respuesta == 'b'){
                         paloma.css({
                             'left': '623px',
